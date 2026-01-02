@@ -10,8 +10,8 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="py-12 border ">
-      <div className="bg-white p-8 rounded-xl shadow max-w-2xl">
+    <section className="py-12  flex justify-center px-6">
+      <div className="bg-white p-8 rounded-xl shadow w-full max-w-xl">
         <h2 className="text-2xl font-bold">Contact Us</h2>
         {sent ? (
           <p className="mt-4 text-[#C08081] font-semibold">
@@ -48,7 +48,7 @@ export default function ContactPage() {
             <div>
               <button
                 type="submit"
-                className="bg-[#C08081] text-white px-4 py-2 rounded-md"
+                className="hover:bg-[#bb6a6c] bg-[#C08081] text-white px-4 py-2 rounded-md"
               >
                 Send Message
               </button>

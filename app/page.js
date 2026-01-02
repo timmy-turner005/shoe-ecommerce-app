@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <section className="grid md:grid-cols-2 items-center">
+    <section className=" px-7 gap-4 grid md:grid-cols-2 items-center">
       <div>
         <h1 className="text-4xl font-extrabold text-slate-900">
           Step Into Comfort — Leather Shop
@@ -13,16 +13,16 @@ export default function HomePage() {
           Discover your next favorite pair.
         </p>
 
-        <div className="mt-6 flex items-center gap-4">
+        <div className="mt-6 flex items-center gap-4 ">
           <Link
             href="/about"
-            className="inline-block bg-[#C08081] text-white px-5 py-3 rounded-lg shadow"
+            className="hover:bg-[#bb6a6c] inline-block bg-[#C08081] text-white px-5 py-3 rounded-lg shadow"
           >
             Learn More
           </Link>
           <Link
             href="/contact"
-            className="inline-block bg-[#C08081] text-white px-5 py-3 rounded-lg shadow"
+            className="hover:bg-[#bb6a6c] inline-block bg-[#C08081] text-white px-5 py-3 rounded-lg shadow"
           >
             Contact Us
           </Link>
@@ -53,8 +53,9 @@ export default function HomePage() {
       <div className="flex items-center justify-center my-8 md:my-6">
         <div className="w-full max-w-md rounded-xl overflow-hidden shadow-lg bg-white">
           <Image
-            src="/hero-shoe.jpg"
+            src="/shoe pic.jpg"
             alt="Shoe sample"
+            loading="eager"
             className="w-full h-auto object-cover"
             width="400"
             height="400"

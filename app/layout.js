@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           </div>
         </header>
 
-        <main className="flex-1 app-container bg-[#fdf5e6]">{children}</main>
+        <main className="flex-1 bg-[#fdf5e6]">{children}</main>
 
         <footer className="w-full bg-[#C08081]">
           <div className="app-container py-8 text-sm text-gray-500 text-center">

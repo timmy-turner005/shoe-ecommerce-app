@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <section className="py-12">
+    <section className="py-12 px-6">
       <div className="bg-white p-8 rounded-xl shadow">
         <h2 className="text-2xl font-bold">About ShoeCo</h2>
         <p className="mt-4 text-gray-600">
@@ -19,7 +19,7 @@ export default function AboutPage() {
         </ul>
 
         <p className="mt-6">
-          <Link href="/" className="text-indigo-600">
+          <Link href="/" className="hover:text-[#bb6a6c] text-[#C08081]">
             ← Back to Home
           </Link>
         </p>
