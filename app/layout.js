@@ -22,6 +22,9 @@ export default function RootLayout({ children }) {
               <Link href="/" className="hover:text-[#673147]">
                 Home
               </Link>
+              <Link href="/products" className="hover:text-[#673147]">
+                Products
+              </Link>
               <Link href="/about" className="hover:text-[#673147]">
                 About
               </Link>
