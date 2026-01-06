@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { use, useState } from "react";
 
 export default function ContactPage() {
@@ -14,9 +15,19 @@ export default function ContactPage() {
       <div className="bg-white p-8 rounded-xl shadow w-full max-w-xl">
         <h2 className="text-2xl font-bold">Contact Us</h2>
         {sent ? (
-          <p className="mt-4 text-[#C08081] font-semibold">
-            Thanks! We'll get back to you shortly.
-          </p>
+          <div>
+            <p className="mt-4 text-[#C08081] font-semibold">
+              Thanks! We'll get back to you shortly.
+            </p>
+            <div className="text-right">
+              <Link
+                href="/"
+                className="text-gray-800 hover:text-[#bb6a6c] cursor-pointer"
+              >
+                Back
+              </Link>
+            </div>
+          </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-4 space-y-4">
             <div>
